@@ -1,10 +1,10 @@
-function mainPage(div){
+function mainPage(divElement){
     //background
     const background = document.createElement("div");
     
     background.classList.add("background");
 
-    div.appendChild(background);
+    divElement.appendChild(background);
 
     //text
     const about = document.createElement("p");

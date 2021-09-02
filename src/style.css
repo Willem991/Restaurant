@@ -11,6 +11,30 @@ body{
     display: grid;
 
     height: 20vh;
+
+    align-items: center;
+    justify-items: center;
+}
+
+li{
+    display: inline;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.inactive{
+    background-color: white;
+}
+
+.inactive:hover{
+    cursor: pointer;
+    border-width: 1px;
+    font-weight: bold;
+}
+
+.active{
+    background-color: aqua;
 }
 
 #content{
