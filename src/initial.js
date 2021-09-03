@@ -20,6 +20,7 @@ function mainPage(divElement){
     const about1 = document.createElement("p");
     
     about1.classList.add("paragraphs");  
+    about1.style.fontSize = "30px";
     about1.textContent = "Welcome To Peter Williams Pie Palace!";
 
     const about2 = document.createElement("p");
