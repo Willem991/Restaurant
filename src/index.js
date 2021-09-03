@@ -11,7 +11,6 @@ function start(){
 
     const title = document.createElement('h1');
     title.textContent = "Peter William's Pie Palace"
-    title.classList.add("paragraphs");
     heading.appendChild(title);
 
     const list = document.createElement("ul");
@@ -63,6 +62,8 @@ function start(){
         contact.classList.remove("active");
         contact.classList.add("inactive");
 
+        const content = document.querySelector("#content");
+        removeChild(content);
 
     };
 
@@ -76,8 +77,13 @@ function start(){
         contact.classList.remove("inactive");
         contact.classList.add("active");
 
+        const content = document.querySelector("#content");
+        removeChild(content);
+
     }; 
 };
+
+//Removes all child elements from parent element. Used to clear page on navbar switch.
 
 function removeChild(parent){
 
