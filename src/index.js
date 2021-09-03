@@ -1,5 +1,7 @@
 import './style.css';
 import mainPage from './initial';
+import menuPage from './menu';
+import contactPage from './contact';
 
 function start(){
     const mainBody = document.querySelector("body");
@@ -64,6 +66,7 @@ function start(){
 
         const content = document.querySelector("#content");
         removeChild(content);
+        menuPage(content);
 
     };
 
@@ -79,6 +82,7 @@ function start(){
 
         const content = document.querySelector("#content");
         removeChild(content);
+        contactPage(content);
 
     }; 
 };

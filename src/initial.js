@@ -11,6 +11,9 @@ function mainPage(divElement){
     //infoPage
     const infoPage = document.createElement("div");
     infoPage.classList.add("infoPage");
+    infoPage.classList.add('border1');
+    infoPage.classList.remove('border2');
+    infoPage.classList.remove('border3');
     background.appendChild(infoPage);
 
     //text
@@ -29,6 +32,7 @@ function mainPage(divElement){
 
     firstImage.src = pastry1;
     firstImage.classList.add("firstImage");
+
     infoPage.appendChild(about1);
     infoPage.appendChild(firstImage);
     infoPage.appendChild(about2);
